@@ -1,0 +1,154 @@
+@media screen and (max-width:760px) {
+    body {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        row-gap: 0;
+        column-gap: 0;
+    }
+
+    header {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    header h1 {
+        padding-top: .75em;
+        font-size: 2.4rem;
+        text-align: center;
+
+    }
+
+    div.header-line {
+        margin: 0 auto;
+    }
+
+    header h2 {
+        text-align: center;
+        padding: .5em 0;
+        font-size: 1.5rem;
+    }
+    
+    nav {
+        width: 100vw;
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        margin: 0;
+        padding: 1em 0;
+        border-radius: 0;
+    }
+
+    nav a {
+        display: inline;
+        font-size: 1rem;
+        padding: 1em;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.205);
+    }
+
+    main {
+        display: block;
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.projects h2 {
+        margin: .5em 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    div.p1, div.p2, div.p3 {
+        margin-bottom: 2em;
+    }
+
+    main img {
+        display: block;
+        max-width: 100vw;
+        margin: 0 auto .75em auto;
+        box-shadow: none;
+    }
+
+    main h3 {
+        font-size: 1.2rem;
+        background: transparent;
+    }
+
+    main p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+        background: transparent;
+    }
+
+    footer {
+        display: block;
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        border-radius: 0;
+    }
+
+    div.email {
+        margin-top: 1em;
+    }
+
+}
+
+@media screen and (min-width:761px) and (max-width:1080px) {
+    body {
+        margin: 1em;
+        row-gap: 1em;
+        column-gap: 1em;
+    }
+
+    header {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        border-top-right-radius: 50px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        grid-column: 1;
+        grid-row: 2;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        margin: 0;
+        padding: 0 0 0 3em;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+    }
+
+    main {
+        display: block;
+        grid-column: 2;
+        grid-row: 2 / span 3;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 0px;
+    }
+
+    footer {
+        display: block;
+        grid-column: 1;
+        grid-row: 3;
+        font-size: .75rem;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    body {
+        width: 80%;
+        margin: 1em auto;
+    }
+}
